@@ -1,0 +1,53 @@
+<app-header></app-header>
+
+<form class="form" [formGroup]="carroForm" (submit)="createCarro()">
+    <div class="form-field">
+        <label>Marca:</label>
+        <input type="text" formControlName="marca">
+    </div>
+
+    <div class="form-field">
+        <label>Modelo:</label>
+        <input type="text" formControlName="modelo">
+    </div>
+
+    <div class="form-field">
+        <label>Ano:</label>
+        <input type="text" formControlName="ano">
+    </div>
+
+    <div class="form-field">
+        <label>Placa:</label>
+        <input type="text" formControlName="placa">
+    </div>
+
+    <div class="form-field">
+        <label>Renavam:</label>
+        <input type="text" formControlName="renavam">
+    </div>
+
+    <div class="form-field">
+        <label>Chassi:</label>
+        <input type="text" formControlName="chassi">
+    </div>
+
+    <div class="form-field">
+        <label>Cor:</label>
+        <input type="text" formControlName="cor">
+    </div>
+
+    <div class="form-field">
+        <label>Gasolina:</label>
+        <input type="text" formControlName="gasolina">
+    </div>
+
+    <div class="form-field">
+        <label>Data de inclusão:</label>
+        <input type="text" formControlName="dataInclusao">
+    </div>
+
+    <div class="acao">
+        <button class="cadastrarCarro" type="submit" [disabled]="carroForm.invalid">Salvar</button>
+    </div>
+
+</form>

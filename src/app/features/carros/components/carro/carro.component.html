@@ -1,0 +1,22 @@
+<div class="card" *ngIf="card && carro" >
+    <div class="card-description">
+        <p><strong>Marca:</strong> {{carro?.marca}}</p>
+        <p><strong>Modelo:</strong> {{carro?.modelo}}</p>
+        <p><strong>Placa:</strong> {{carro?.placa}}</p>
+        <p><strong>Ano:</strong> {{carro?.ano}}</p>
+    </div>
+<div class="action" (click)="carrosDetails()">+Informações</div>
+</div>
+
+<div *ngIf="!card && carro">
+    <h2>Dados do veículo</h2>
+    <p><strong>Marca:</strong> {{carro?.marca}}</p>
+        <p><strong>Modelo:</strong> {{carro?.modelo}}</p>
+        <p><strong>Placa:</strong> {{carro?.placa}}</p>
+        <p><strong>Ano:</strong> {{carro?.ano}}</p>
+        <p><strong>Chassi:</strong> {{carro?.chassi}}</p>
+        <p><strong>Renavam:</strong> {{carro?.renavam}}</p>
+        <p><strong>Cor:</strong> {{carro?.cor}}</p>
+        <p><strong>Combustível:</strong> {{carro?.combustivel}}</p>
+        <p><strong>Data de Inclusão no sistema:</strong> {{carro?.dataInclusaoSistema}}</p>
+</div>

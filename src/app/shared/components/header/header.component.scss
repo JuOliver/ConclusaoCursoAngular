@@ -1,0 +1,22 @@
+nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #0E1A33;
+            color: white;
+            height: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+    ul{
+          display: flex;
+          justify-content: space-between;
+          gap: 10px;
+          li{
+              list-style: none;
+              margin-right: 10px;
+              margin-left: 10px;
+              cursor: pointer;
+              font-weight: bold;
+          }  
+    }
+}
